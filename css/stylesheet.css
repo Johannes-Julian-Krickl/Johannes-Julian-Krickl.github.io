@@ -23,6 +23,8 @@ html {
   line-height: 1;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -32,13 +34,15 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   background: white;
+  height: 100%;
+  width: 100%;
 }
 
 section {
   width: 100%;
+  height: 100%;
   min-width: 350px;
   min-height: 500px;
-  height: 100vh;
   scroll-snap-align: start;
   border-bottom: 1px solid grey;
 }
@@ -276,19 +280,21 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  height: 100%;
 }
 
 .page-1-img {
-  height: 100vh;
-  max-height: 100vh;
-  object-fit: contain;
+  height: 100%;
+  width: 50%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .page-1-content {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   min-width: 40vw;
-  flex-grow: 2;
+  flex-grow: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -721,7 +727,6 @@ hr {
     grid-column: 5 / span 1 !important;
     grid-row: 1 / 2 !important;
   }
-
 }
 
 .entry-1 {
