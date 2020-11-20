@@ -946,6 +946,13 @@ hr {
 .p5-level {
   display: flex;
   max-height: 2.5rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.p5-level div {
+  border-right: 1px solid black;
 }
 
 .p5-lvl1-pos {
